@@ -1,6 +1,9 @@
 import { Box, Button, Stack } from "@mui/material";
 import { red, orange } from "@mui/material/colors";
+import Footer from "../components/Home/Footer";
 import { Router } from "../utils/Router";
+import "../css/Home.css";
+import "../css/utils.css";
 
 const lightOrange = orange[100];
 const brickRed = red[700];
@@ -9,10 +12,9 @@ export default function Home() {
   return (
     <Box
       sx={{
-        width: "100vw",
-        height: "100vh",
         backgroundColor: lightOrange,
       }}
+      className="home full-vw full-vh"
     >
       <Box sx={{ height: "20vh" }}>
         <Stack
@@ -21,10 +23,10 @@ export default function Home() {
           alignItems="flex-end"
           spacing={1}
         >
-          <div>Responsive Pages</div>
+          <div className="home-header">Responsive Pages</div>
         </Stack>
       </Box>
-      <Box sx={{}}>
+      <Box sx={{ height: "70vh" }}>
         <Stack
           spacing={{ xs: 1 }}
           direction="row"
@@ -52,6 +54,7 @@ export default function Home() {
             ))}
         </Stack>
       </Box>
+      <Footer />
     </Box>
   );
 }

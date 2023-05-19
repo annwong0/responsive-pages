@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.home {
+    font-family: 'Amatic SC', cursive;
+}
+
+.home-header {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.home-content {
+    padding: 0 20px;
+}
+
+.home-footer {
+    font-size: 25px;
+    height: 10vh;
+}
+
+.footer a {
+    color: inherit
+}

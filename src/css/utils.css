@@ -1,0 +1,12 @@
+.full-vw {
+    width: 100vw;
+}
+.full-vh {
+    height: 100vh;
+}
+.full-width {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
