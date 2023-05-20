@@ -9,13 +9,13 @@ const black = grey[900];
 
 export default function NotFound() {
   return (
-    <Box className="full-vw full-vh not-found-page">
-      <Grid container spacing={5} sx={{ padding: "5% 5% 0 5%" }}>
+    <Box className=" not-found-page">
+      <Grid container spacing={5} sx={{ padding: "3% 5%" }}>
         <Grid item xs={12}>
           <div className="not-found-small-text">404 not found</div>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src={NotFoundImage} alt="Not Found" className="full-width" />
+          <img src={NotFoundImage} alt="Not Found" className="not-found-img" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={4}>
@@ -33,7 +33,13 @@ export default function NotFound() {
                 variant="contained"
                 className="not-found-btn"
                 href="/"
-                sx={{ backgroundColor: black }}
+                sx={{
+                  backgroundColor: black,
+                  "&:hover": { backgroundColor: "black" },
+                  padding: "12px 24px",
+                  borderRadius: "0",
+                  fontFamily: "MonoSpace",
+                }}
               >
                 Back to homepage
               </Button>
