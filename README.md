@@ -14,8 +14,6 @@
 
 ## Overview
 
-![screenshot](https://github.com/annwong0/windbnb/blob/master/public/screenshot.png)
-
 ### Built With
 
 - [React](https://reactjs.org/)
